@@ -4,16 +4,6 @@ Created on Thu Dec 13 12:52:01 2018
 
 @author: tancr
 """
-
-#2. 5 points. Create an HTTP server and HTTP client to manage a
-#phonebook. There should exist the following operations in the phonebook:
-#• add a contact (phone + name)
-#• get a phone by name
-#• delete a phone by name
-#• update a phone by name
-#Make sure you use JSON to communicate between client and server.
-
-
 #%%
 
 
