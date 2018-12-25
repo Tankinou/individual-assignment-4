@@ -21,7 +21,7 @@ local_host = 'http://127.0.0.1:5000/{}'
 
 def upload_graph(graph): 
     data = graph
-    request = requests.post(local_host.format('upload-graph'), json=data)
+    request = requests.post("http://127.0.0.1:5000/upload_graph/{}".format(graph), json=data)
     if request.status_code == 200:
         return request.json()
     else:

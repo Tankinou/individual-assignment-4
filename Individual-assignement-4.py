@@ -17,14 +17,14 @@ from flask import Flask, jsonify, request
 server = Flask("IndividualAssignement4")
 
 
-@server.route('/upload_graph', methods=['POST'])
+@server.route('/upload_graph')
 def upload_graph():
     body = request.get_json()
     return jsonify(body)
     
 
 @server.route('/degrees-of-separation/<start>/<end>', methods=['PUT'])
-def find_path(graph = '', start, end, path = []):
+def find_path(graph, start, end, path = []):
     
     
     path = path + [start]    
